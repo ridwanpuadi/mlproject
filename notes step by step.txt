@@ -1,0 +1,24 @@
+# Create repository project github
+# Create Environment
+coda create -p venv python==3.8 -y
+conda activate venv/
+
+# Push file to github
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ridwanpuadi/mlproject.git
+git remote -v
+git config --global user.name 'Ridwan Puadi'
+git config --global user.mail deeridwan9747@gmail.com # jika belum di setting
+git push -u origin main
+
+# create .gitignore di github pilih python
+git pull
+
+# create setup.py
+# create requirements.txt
+# create folder src
+__init__.py
+
